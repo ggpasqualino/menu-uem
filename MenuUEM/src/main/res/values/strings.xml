@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menu UEM</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_nota_da_disciplina">Nota</string>
+    <string name="disciplinas">Disciplinas</string>
+    <string name="situacao">Situação:</string>
+    <string name="nota">Nota</string>
+    <string name="faltas">Faltas</string>
+    <string name="avaliacao">Avaliação</string>
+    <string name="prefs_ra">ra</string>
+    <string name="prefs_senha">senha</string>
+    <string name="prefs_ano">ano_consulta</string>
+    <string name="prefs_ano_hint">Ano para consulta das notas</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="prompt_email">R.A.</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in_register">Entrar</string>
+    <string name="prefs_isLogado">isLogado</string>
+    <string name="action_sair">Sair</string>
+    <string name="ano_et_hint">Ano</string>
+    <string name="atualiza_disciplinas_bt_hint">Carregar</string>
+    <string name="notaDaDisciplina_disciplina">Disciplina:</string>
+
+    <string-array name="notasActivity_menus">
+        <item>SAV</item>
+        <item>DAA</item>
+    </string-array>
+
+</resources>

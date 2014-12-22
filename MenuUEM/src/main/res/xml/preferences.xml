@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="@string/prefs_ra"
+        android:title="RA"
+        android:defaultValue="12345"
+        android:inputType="number"
+        />
+
+    <EditTextPreference
+        android:key="@string/prefs_senha"
+        android:title="Senha"
+        android:defaultValue="12345"
+        android:password="true"
+        />
+
+</PreferenceScreen>

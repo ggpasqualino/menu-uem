@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="custom_background_color">#e0e4e8</color>
+    <color name="custom_actionbar_color">#006633</color>
+    <color name="custom_actionbar_text_color">#ffffff</color>
+    <color name="custom_table_header">#a7f3c1</color>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/custom_background_color</item>
+        <item name="android:colorBackground">@color/custom_background_color</item>
+        <item name="actionBarStyle">@style/myActionBar</item>
+        <item name="actionBarTabTextStyle">@style/myActionBarTabText</item>
+        <item name="actionMenuTextColor">@color/custom_actionbar_text_color</item>
+    </style>
+
+    <style name="myActionBar" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/custom_actionbar_color</item>
+        <item name="titleTextStyle">@style/myActionBarTitleText</item>
+    </style>
+
+    <style name="myActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/custom_actionbar_text_color</item>
+    </style>
+
+    <style name="myActionBarTabText" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@color/custom_actionbar_text_color</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+</resources>

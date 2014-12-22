@@ -1,0 +1,183 @@
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="pt-br"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+    <title> Universidade Estadual de Maringá - NPD/Desenvolvimento</title>
+    <link rel='stylesheet' href='css/janela.css' type='text/css'/>
+</head>
+<body>
+<center><br/><img src="images/webDAA_banner.jpg"/></center>
+<style type="text/css">
+    table#alter {
+    border-collapse: collapse;
+    background: #FFFFF0;
+    font-size:10px}
+    table#alter td {
+    border: 1px solid #000000;
+    }
+    table#alter th {
+    border: 1px solid #000000;
+    border-bottom: 2px solid #000000;
+    background: #F0FFF0; }
+    table#alter th {background: #006633;}
+    table#alter tr td {background: #ffffff;}
+    table#alter tr.dif td {background: #ccffcc;}
+    }
+</style>
+
+<table id=alter width=775>
+    <th colspan=4>Dados do Aluno</th>
+    <tr>
+        <td><b>RA</b></td>
+        <td><b>Nome do aluno</b></td>
+        <td><b>Série</b></td>
+        <td><b>Situação Acadêmica</b></td>
+    </tr>
+    <tr class="dif">
+        <td>53040</td>
+        <td>GUILHERME IRINEU ROSA DE ARAUJO</td>
+        <td>4</td>
+        <td>Matriculado(a)</td>
+    </tr>
+</table>
+
+<SCRIPT language=JavaScript>
+function valida_form()
+{
+
+
+
+
+
+
+document.getElementById('BotaoSubmit').disabled = true
+return true
+}
+</script>
+<script language=JavaScript type=text/javascript src='js/form.js'></script>
+<p>
+<center>
+    <table class='form'>
+        <th>Consulta de Notas e Faltas</th>
+        <tr>
+            <td>
+                <form name='FrmConsultaNotas' action='ValidaMenuAluno'
+                      accept-charset="iso-8859-1,utf-8" method=post onsubmit='return valida_form()'>
+                    <table width=100% border=0 cellpadding=0 cellspacing=0 align=center>
+                        <tr bgcolor=#000000>
+                            <td colspan=6><img src='images/blackdot.jpg'></td>
+                        </tr>
+                        <tr bgcolor=#a7f3c1>
+                            <td width=50> Cód. Disc.</td>
+                            <td width=270>Disciplina</td>
+                            <td></td>
+                            <td>Notas e Faltas
+                            <td></td>
+                            <td>Situação</td>
+                        </tr>
+                        <tr bgcolor=#000000>
+                            <td colspan=6><img src='images/blackdot.jpg'></td>
+                        </tr>
+                        <tr bgcolor=#ffffff>
+                            <td colspan=6><img src='images/dot.jpg'></td>
+                        </tr>
+                        <tr bgcolor=#dfdfdf>
+                            <td>1757</td>
+                            <td>Arquitetura de Computadores II</td>
+                            <td></td>
+                            <td>Nota: 6.8</td>
+                            <td>Faltas: 4</td>
+                            </td>
+                            <td><b>Aprovado</b></td>
+                        <tr bgcolor=#efefef>
+                            <td>1034</td>
+                            <td>Automacao</td>
+                            <td></td>
+                            <td>Nota: 8.9</td>
+                            <td>Faltas: 0</td>
+                            </td>
+                            <td><b>Aprovado</b></td>
+                        <tr bgcolor=#dfdfdf>
+                            <td>1028</td>
+                            <td>Linguagens de Programacao</td>
+                            <td></td>
+                            <td>Nota: 7.7</td>
+                            <td>Faltas: 12</td>
+                            </td>
+                            <td><b>Aprovado</b></td>
+                        <tr bgcolor=#efefef>
+                            <td>1756</td>
+                            <td>Sistemas Distribuidos</td>
+                            <td></td>
+                            <td>Nota: 7.5</td>
+                            <td>Faltas: 21</td>
+                            </td>
+                            <td><b>Aprovado</b></td>
+                        <tr bgcolor=#dfdfdf>
+                            <td>1747</td>
+                            <td>Teoria dos Grafos e Anal. de Algorit</td>
+                            <td></td>
+                            <td>Nota: 8.5</td>
+                            <td>Faltas: 11</td>
+                            </td>
+                            <td><b>Aprovado</b></td>
+                        <tr bgcolor=#efefef>
+                            <td>1029</td>
+                            <td>Trabalho de Graduacao</td>
+                            <td>Avaliação:1</td>
+                            <td>Nota: 8.1</td>
+                            <td>Faltas: 0</td>
+                            </td>
+                            <td><b>Matriculado</b></td>
+                        <tr bgcolor=#efefef>
+                            <td></td>
+                            <td></td>
+                            <td>Avaliação:2</td>
+                            <td>Nota: 7.2</td>
+                            <td>Faltas: 0</td>
+                            </td>
+                            <td></td>
+                        <tr bgcolor=#efefef>
+                            <td></td>
+                            <td></td>
+                            <td>Avaliação:3</td>
+                            <td>Nota: 0.0</td>
+                            <td>Faltas: 0</td>
+                            </td>
+                            <td></td>
+                        <tr bgcolor=#000000>
+                            <td colspan=6><img src='images/blackdot.jpg'></td>
+                        </tr>
+                    </table>
+                    <br>Emitido em 14/12/2013 14:38:53<br>
+                    <center>
+                        <table>
+                            <tr>
+                                <td><input type=submit value='Voltar para o Menu do Aluno'
+                                           id=BotaoSubmit></td>
+                                <td></td>
+                </form>
+                <form name=ItemFrmConsultaNotas action='' method=post>
+                    <td></td>
+                </form>
+                <form name=Item2FrmConsultaNotas action='' method=post>
+                    <td></td>
+                </form>
+                <form name=Item2FrmConsultaNotas action='' method=post>
+                    <td></td>
+                </form>
+                <form name=Item2FrmConsultaNotas action='' method=post>
+                    <td></td>
+                </form>
+                <form name=Item2FrmConsultaNotas action='' method=post>
+                    <td></td>
+                </form>
+                <form name=AuxiliarFrmConsultaNotas action='' method=post>
+                    <td></td>
+                    <td>
+                        <input type=button value='Imprimir' OnClick=javascript:window.print();></td>
+                </form>
+        </tr>
+    </table>
+</center>
+<br>

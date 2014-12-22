@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 18
+    }
+
+    signingConfigs {
+
+        release
+    }
+
+    buildTypes {
+        release {
+
+            signingConfig signingConfigs.release
+
+            minifyEnabled false
+
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+
+            zipAlignEnabled true
+
+        }
+    }
+}
+
+
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:+'
+    compile 'org.jsoup:jsoup:1.7.3'
+    compile 'com.android.support:support-v4:18.0.0'
+}
+
+
+
+def properties = new Properties()
+
+properties.load(new FileInputStream(rootProject.file("release.properties")))
+
+android.signingConfigs.release.storeFile rootProject.file(properties.keyStore)
+
+android.signingConfigs.release.storePassword properties.keyStorePassword
+
+android.signingConfigs.release.keyAlias properties.keyAlias
+
+android.signingConfigs.release.keyPassword properties.keyAliasPassword
